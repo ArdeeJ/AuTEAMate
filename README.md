@@ -1,3 +1,7 @@
+# AuTEAMate
+
+Designed to simplify the process of creating balanced teams for Recreational-League Sports
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
