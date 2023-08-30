@@ -1,10 +1,7 @@
-import './App.css'
+import Home from "./pages/home";
 
 function App() {
-
-  return (
-    <h1>AuTEAMate</h1>
-  )
+  return <Home />;
 }
 
-export default App
+export default App;
