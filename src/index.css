@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inter&display=swap');
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
