@@ -46,7 +46,7 @@ const NavLinks = styled.div`
 `;
 
 const NavLink = styled(Link)`
-  margin: 0 130px;
+  margin: 0 135px;
   text-decoration: none;
 `;
 
