@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   position: fixed;
@@ -6,9 +7,7 @@ const Container = styled.div`
   width: 100vw;
   height: 130px;
 
-  display: flex;
   background-color: #1a1a1a;
-  z-index: 1000;
 `;
 
 const Logo = styled.div`
@@ -36,12 +35,27 @@ const Contact = styled.div`
   -webkit-text-stroke: 2px black;
 `;
 
+const NavLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 500px;
+  
+`;
+
+const NavLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+`;
+
 function Navbar() {
   return (
     <Container>
-      <About>ABOUT</About>
-      <Logo>AUTEAMATE</Logo>
-      <Contact>CONTACT</Contact>
+      <NavLinks>
+        <NavLink to="/about"><About>ABOUT</About></NavLink>
+        <NavLink to="/"><Logo>AUTEAMATE</Logo></NavLink>
+        <NavLink to="contact"><Contact>CONTACT</Contact></NavLink>
+      </NavLinks>
     </Container>
   );
 }
