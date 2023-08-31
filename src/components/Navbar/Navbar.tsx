@@ -16,7 +16,7 @@ const Logo = styled.div`
   font-family: "Black Han Sans", sans-serif;
   margin: auto;
   text-shadow: 0px 15px 10px #000000;
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 2px black;
 `;
 const About = styled.div`
   font-size: 40px;
@@ -24,7 +24,7 @@ const About = styled.div`
   font-family: "Black Han Sans", sans-serif;
   margin: auto;
   text-shadow: 0px 10px 10px #000000;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 1px black;
 `;
 const Contact = styled.div`
   font-size: 40px;
@@ -32,7 +32,7 @@ const Contact = styled.div`
   font-family: "Black Han Sans", sans-serif;
   margin: auto;
   text-shadow: 0px 10px 10px #000000;
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 1px black;
 `;
 
 const NavLinks = styled.div`
@@ -54,7 +54,7 @@ function Navbar() {
       <NavLinks>
         <NavLink to="/about"><About>ABOUT</About></NavLink>
         <NavLink to="/"><Logo>AUTEAMATE</Logo></NavLink>
-        <NavLink to="contact"><Contact>CONTACT</Contact></NavLink>
+        <NavLink to="/contact"><Contact>CONTACT</Contact></NavLink>
       </NavLinks>
     </Container>
   );
