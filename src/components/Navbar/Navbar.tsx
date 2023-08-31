@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
+  display: flex;
   position: fixed;
   top: 1in;
   width: 100vw;
@@ -36,15 +37,16 @@ const Contact = styled.div`
 `;
 
 const NavLinks = styled.div`
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 500px;
-  
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 const NavLink = styled(Link)`
-  color: white;
+  margin: 0 130px;
   text-decoration: none;
 `;
 
@@ -52,9 +54,15 @@ function Navbar() {
   return (
     <Container>
       <NavLinks>
-        <NavLink to="/about"><About>ABOUT</About></NavLink>
-        <NavLink to="/"><Logo>AUTEAMATE</Logo></NavLink>
-        <NavLink to="/contact"><Contact>CONTACT</Contact></NavLink>
+        <NavLink to="/about">
+          <About>ABOUT</About>
+        </NavLink>
+        <NavLink to="/">
+          <Logo>AUTEAMATE</Logo>
+        </NavLink>
+        <NavLink to="/contact">
+          <Contact>CONTACT</Contact>
+        </NavLink>
       </NavLinks>
     </Container>
   );
